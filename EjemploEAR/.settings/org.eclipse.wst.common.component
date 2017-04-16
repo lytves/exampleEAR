@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="EjemploEAR">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="EjemploEAR_EJB.jar" deploy-path="/" handle="module:/resource/EjemploEAR_EJB/EjemploEAR_EJB">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EjemploEAR_EJBClient.jar" deploy-path="/" handle="module:/resource/EjemploEAR_EJBClient/EjemploEAR_EJBClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EjemploEAR_WebApp1.war" deploy-path="/" handle="module:/resource/EjemploEAR_WebApp1/EjemploEAR_WebApp1">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="EjemploEAR_WebApp2.war" deploy-path="/" handle="module:/resource/EjemploEAR_WebApp2/EjemploEAR_WebApp2">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
