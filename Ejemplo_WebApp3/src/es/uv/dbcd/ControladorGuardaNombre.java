@@ -19,8 +19,8 @@ public class ControladorGuardaNombre extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	// Solicitamos la inyección de un EJB
-	@EJB	
-	private ConsultaAutoresRemote consulta;
+//	@EJB	
+//	private ConsultaAutoresRemote consulta;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
@@ -46,7 +46,7 @@ public class ControladorGuardaNombre extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		HttpSession httpSession = request.getSession(true);
-		consulta = (ConsultaAutoresRemote) httpSession.getAttribute("mi_bean");
+		ConsultaAutoresRemote consulta = (ConsultaAutoresRemote) httpSession.getAttribute("mi_bean");
 		
 		if (consulta == null) {
 			System.out.println("consulta == null");
